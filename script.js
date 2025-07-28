@@ -9,3 +9,15 @@ mouseEvent.addEventListener('mouseenter', function() {
 mouseEvent.addEventListener('mouseleave', function() {
     mouseEvent.textContent = "I was hovered over";
 });
+
+
+// Part 2: Keyboard events
+
+const input = document.querySelector('input');
+const display = document.getElementById('display');
+// On keydown event, will activate the displayKey function
+input.addEventListener("keydown", displayKey);
+// This will display which key is pressed under the textbox 
+function displayKey(event) {
+  display.textContent += `${event.code}`;
+}
