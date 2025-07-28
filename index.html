@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <style src="style.css"></style>
     <script defer src="script.js"></script>
 </head>
+
 <body>
     <header>
         <h1 id="header">Lab 7: JavaScript Events</h1>
     </header>
-    
+
     <h2>Part 1: Mouse Events</h2>
     <button id="mouseEvent">Hover the mouse over me</button>
 
@@ -33,9 +35,17 @@
     <p id="charDisplay"></p>
 
     <h2>Part 4: Focus and Blur Events</h2>
-        <label for="comments">Comments:</label>
-        <input type="text" id="comments" onfocus="onFocus();" onblur="onBlur();">
+    <label for="comments">Comments:</label>
+    <input type="text" id="comments" onfocus="onFocus();" onblur="onBlur();">
 
-
+    <h2>Part 5: Event Delegation</h2>
+    <section id="delegation-section">
+        <div class="grid" id="grid-section">
+            <button id="button1">Click me first!</button>
+            <button id="button2">Click me too!</button>
+            <button id="button3">No please click me!</button>
+        </div>
+    </section>
 </body>
+
 </html>

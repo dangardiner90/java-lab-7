@@ -55,3 +55,26 @@ function onBlur() {
     comments.style.background = 'red';
     comments.value = "This is no longer focused on";
 }
+
+
+// Part 5: Event delegation
+
+// Creating a variable to look at the entire section element
+const buttonList = document.getElementById('grid-section');
+
+// This is a function to check against which element within the container is targeted
+buttonList.addEventListener('click', (event => {
+    if (event.target.id === 'button1') {
+        // Once a button is clicked, it will display a custom alert
+        alert('You clicked on the first button!' );
+        // It will also change the background colour accordingly
+        event.target.style.backgroundColor = "red";
+    } else if (event.target.id === 'button2') {
+        alert('You clicked on the second button!');
+        event.target.style.backgroundColor = "blue";
+    } else if (event.target.id === 'button3') {
+        alert('You clicked the third button!');
+        event.target.style.backgroundColor = "green";
+    }
+}));
+
