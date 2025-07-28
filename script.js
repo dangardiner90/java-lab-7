@@ -21,3 +21,24 @@ input.addEventListener("keydown", displayKey);
 function displayKey(event) {
   display.textContent += `${event.code}`;
 }
+
+
+// Part 3: Form events
+
+const formEvent = document.getElementById('formEvent');
+const character = document.getElementById('character');
+const charDisplay = document.getElementById('charDisplay');
+// This will prevent the form from submitting, and display the value chosen in an alert
+formEvent.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert(`Character chosen: ${character.value}`);
+});
+// This will display which value was chosen when selected in the drop down menu
+character.addEventListener('change', displayChar);
+
+function displayChar(event) {
+    event = character.value;
+    charDisplay.textContent = `${event}`;
+}
+
+
