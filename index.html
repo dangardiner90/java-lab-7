@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 7: JavaScript Events</title>
-    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
@@ -14,13 +14,18 @@
         <h1 id="header">Lab 7: JavaScript Events</h1>
     </header>
 
+    <section class="mouse">
     <h2>Part 1: Mouse Events</h2>
     <button id="mouseEvent">Hover the mouse over me</button>
+    </section>
 
+    <section class="keyboard">
     <h2>Part 2: Keyboard Events</h2>
     <input id="keyinput" placeholder="Click here, then press a key"></input>
     <p id="display"></p>
+    </section>
 
+    <section class="form">
     <h2>Part 3: Form Events</h2>
     <form id="formEvent">
         <label for="Character">Which character is strongest?:</label>
@@ -33,13 +38,16 @@
         <button type="submit">Submit</button>
     </form>
     <p id="charDisplay"></p>
+    </section>
 
+    <section class="focus">
     <h2>Part 4: Focus and Blur Events</h2>
     <label for="comments">Comments:</label>
     <input type="text" id="comments" onfocus="onFocus();" onblur="onBlur();">
+    </section>
 
+    <section class="delegation-section">
     <h2>Part 5: Event Delegation</h2>
-    <section id="delegation-section">
         <div class="grid" id="grid-section">
             <button id="button1">Click me first!</button>
             <button id="button2">Click me too!</button>

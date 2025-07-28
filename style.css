@@ -1,0 +1,54 @@
+body {
+    font-family: monospace;
+    font-weight: 800;
+    color:azure;
+    background-color:darkslategrey;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+    padding: 10px 10px;
+    border: solid 10px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: xx-large
+}
+
+.mouse {
+    border: solid 5px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.keyboard {
+    border: solid 5px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.form {
+    border: solid 5px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.focus {
+    border: solid 5px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.delegation-section {
+    border: solid 5px;
+    border-color: black;
+    padding: 10px 10px;
+    margin: auto;
+}
