@@ -13,7 +13,7 @@ mouseEvent.addEventListener('mouseleave', function() {
 
 // Part 2: Keyboard events
 
-const input = document.querySelector('input');
+const input = document.getElementById('keyinput');
 const display = document.getElementById('display');
 // On keydown event, will activate the displayKey function
 input.addEventListener("keydown", displayKey);
@@ -42,3 +42,16 @@ function displayChar(event) {
 }
 
 
+// Part 4: Focus and blur events
+
+const comments = document.getElementById('comments');
+// When the input box is focused on, it will change to blue and display text
+function onFocus() {
+    comments.style.background = 'blue';
+    comments.value = "This is now focused on";
+}
+// When the input box loses focus, it will change to red and display text
+function onBlur() {
+    comments.style.background = 'red';
+    comments.value = "This is no longer focused on";
+}
